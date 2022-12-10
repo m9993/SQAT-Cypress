@@ -12,17 +12,17 @@ describe("Customer User Functionalities", () => {
     cy.get("body > div > h4.mb-5.d-inline").should("contain", "John");
   });
 
-  // // 10
-  // it("10. Validate the customer profile information will be updated and the edited profile is visible.", () => {
-  //   cy.wait(1500);
-  //   cy.get('.mr-5').click()
-  //   cy.get('#uname').clear().type("John-2")
-  //   cy.wait(1500);
-  //   cy.get('.btn').click()
-  //   cy.go(-2)
-  //   cy.reload()
-  //   cy.get('.mb-5').should('contain','John-2')
-  // });
+  // 10
+  it("10. Validate the customer profile information will be updated and the edited profile is visible.", () => {
+    cy.wait(1500);
+    cy.get('.mr-5').click()
+    cy.get('#uname').clear().type("John-2")
+    cy.wait(1500);
+    cy.get('.btn').click()
+    cy.go(-2)
+    cy.reload()
+    cy.get('.mb-5').should('contain','John-2')
+  });
 
   // 11
   it("11. Validate the customer can register but has to wait for the admin's approval to log into the system.", () => {
